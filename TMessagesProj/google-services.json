@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "135514285188",
+    "project_id": "teleg-ec339"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135514285188:android:d2275fe418ce52f4",
+        "android_client_info": {
+          "package_name": "org.feng.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135514285188-eusrobpji2d7uouucgilagpvpj0k2afb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.feng.messenger",
+            "certificate_hash": "5d65a4dee97254ae5077feddd64db3a18ae9b043"
+          }
+        },
+        {
+          "client_id": "135514285188-c0n17o1aj2vn86pv3791sp17qbas5mjb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXcI9omwj-rkWgKEL9EDmygl_3SX9PViA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

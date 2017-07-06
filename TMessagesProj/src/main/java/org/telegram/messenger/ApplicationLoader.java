@@ -21,6 +21,8 @@ import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.res.Configuration;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Handler;
 import android.os.PowerManager;
@@ -177,7 +179,19 @@ public class ApplicationLoader extends Application {
         boolean enablePushConnection = preferences.getBoolean("pushConnection", true);
 
         MessagesController.getInstance();
-        ConnectionsManager.getInstance().init(BuildVars.BUILD_VERSION, TLRPC.LAYER, BuildVars.APP_ID, deviceModel, systemVersion, appVersion, langCode, configPath, FileLog.getNetworkLogPath(), UserConfig.getClientUserId(), enablePushConnection);
+        ConnectionsManager.getInstance().init(
+                BuildVars.BUILD_VERSION,
+                TLRPC.LAYER,
+                BuildVars.APP_ID,
+                deviceModel,
+                systemVersion,
+                appVersion,
+                langCode,
+                configPath,
+                FileLog.getNetworkLogPath(),
+                UserConfig.getClientUserId(),
+                enablePushConnection
+        );
         if (UserConfig.getCurrentUser() != null) {
             MessagesController.getInstance().putUser(UserConfig.getCurrentUser(), true);
             ConnectionsManager.getInstance().applyCountryPortNumber(UserConfig.getCurrentUser().phone);
